@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "pages_geographies",
+  "info": {
+    "singularName": "pages-geography",
+    "pluralName": "pages-geographies",
+    "displayName": "Pages/Geography"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

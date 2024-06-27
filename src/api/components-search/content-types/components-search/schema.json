@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "components_searches",
+  "info": {
+    "singularName": "components-search",
+    "pluralName": "components-searches",
+    "displayName": "Components/Search"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "placeholder": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    }
+  }
+}

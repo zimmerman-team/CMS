@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "pages_location_resultss",
+  "info": {
+    "singularName": "pages-location-results",
+    "pluralName": "pages-location-resultss",
+    "displayName": "Pages/Location/Results",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "documentTitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    }
+  }
+}
