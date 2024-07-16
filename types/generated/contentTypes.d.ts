@@ -1441,6 +1441,7 @@ export interface ApiPagesDatasetsResourceMobilizationPagesDatasetsResourceMobili
     singularName: 'pages-datasets-resource-mobilization';
     pluralName: 'pages-datasets-resource-mobilizations';
     displayName: 'Pages/Datasets/ResourceMobilization';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1482,18 +1483,6 @@ export interface ApiPagesDatasetsResourceMobilizationPagesDatasetsResourceMobili
         };
       }>;
     barchartValueLabel2: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    sunburstTooltipLabel: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    sunburstCenterLabel: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1695,25 +1684,13 @@ export interface ApiPagesGrantGrantImplementationPagesGrantGrantImplementation
           localized: true;
         };
       }>;
-    disbursedSubtitle: Attribute.String &
+    disbursementsTooltipLabel: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    disbursedText: Attribute.Text &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    disbursedTooltipLabel: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    disbursedRadialChartLabel: Attribute.String &
+    disbursementsRadialChartLabel: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1749,19 +1726,7 @@ export interface ApiPagesGrantGrantImplementationPagesGrantGrantImplementation
           localized: true;
         };
       }>;
-    disbursementsText: Attribute.Text &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     budgetsSubtitle: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    budgetsText: Attribute.Text &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1774,12 +1739,6 @@ export interface ApiPagesGrantGrantImplementationPagesGrantGrantImplementation
         };
       }>;
     expendituresSubtitle: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    expendituresText: Attribute.Text &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1910,12 +1869,6 @@ export interface ApiPagesGrantTargetResultsPagesGrantTargetResults
     };
   };
   attributes: {
-    description: Attribute.Text &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     title: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {

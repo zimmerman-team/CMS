@@ -4,7 +4,8 @@
   "info": {
     "singularName": "pages-datasets-resource-mobilization",
     "pluralName": "pages-datasets-resource-mobilizations",
-    "displayName": "Pages/Datasets/ResourceMobilization"
+    "displayName": "Pages/Datasets/ResourceMobilization",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -56,22 +57,6 @@
       "type": "string"
     },
     "barchartValueLabel2": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "sunburstTooltipLabel": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "sunburstCenterLabel": {
       "pluginOptions": {
         "i18n": {
           "localized": true
