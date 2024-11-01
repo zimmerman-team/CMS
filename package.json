@@ -9,8 +9,8 @@
     "build": "strapi build",
     "strapi": "strapi",
     "deploy": "strapi deploy",
-    "docker": "pm2 start pm2.config.js",
-    "stop-docker": "pm2 stop all"
+    "docker": "pm2-runtime start pm2.config.js",
+    "stop-docker": "pm2-runtime stop all"
   },
   "devDependencies": {},
   "dependencies": {

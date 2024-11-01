@@ -26,9 +26,6 @@ ENV PATH /opt/node_modules/.bin:$PATH
 
 RUN chown -R node:node /opt/app
 
-# APP LOG DIRECTORY FROM pm2.config.js
-RUN mkdir -p /home/zim/app-logs/the-data-explorer-cms
-
 USER node
 EXPOSE 1337
 
