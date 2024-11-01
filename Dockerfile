@@ -16,6 +16,7 @@ RUN yarn build
 # Creating final production image
 FROM node:18-alpine
 RUN apk add --no-cache vips-dev
+RUN yarn global add pm2
 ENV NODE_ENV=production
 WORKDIR /opt/
 COPY --from=build /opt/node_modules ./node_modules
@@ -24,6 +25,11 @@ COPY --from=build /opt/app ./
 ENV PATH /opt/node_modules/.bin:$PATH
 
 RUN chown -R node:node /opt/app
+
+# APP LOG DIRECTORY FROM pm2.config.js
+RUN mkdir -p /home/zim/app-logs/the-data-explorer-cms
+
 USER node
 EXPOSE 1337
+
 CMD ["yarn", "docker"]
