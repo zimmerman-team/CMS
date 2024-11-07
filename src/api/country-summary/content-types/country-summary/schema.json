@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "country_summaries",
+  "info": {
+    "singularName": "country-summary",
+    "pluralName": "country-summaries",
+    "displayName": "Country Summary"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "iso3": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "summary": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    }
+  }
+}

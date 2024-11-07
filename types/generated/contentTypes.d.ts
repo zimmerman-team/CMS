@@ -948,6 +948,58 @@ export interface ApiComponentsSearchComponentsSearch extends Schema.SingleType {
   };
 }
 
+export interface ApiCountrySummaryCountrySummary extends Schema.CollectionType {
+  collectionName: 'country_summaries';
+  info: {
+    singularName: 'country-summary';
+    pluralName: 'country-summaries';
+    displayName: 'Country Summary';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    iso3: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    summary: Attribute.RichText &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::country-summary.country-summary',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::country-summary.country-summary',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::country-summary.country-summary',
+      'oneToMany',
+      'api::country-summary.country-summary'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiGeneralGeneral extends Schema.SingleType {
   collectionName: 'generals';
   info: {
@@ -2562,6 +2614,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::components-charts-eligibility.components-charts-eligibility': ApiComponentsChartsEligibilityComponentsChartsEligibility;
       'api::components-search.components-search': ApiComponentsSearchComponentsSearch;
+      'api::country-summary.country-summary': ApiCountrySummaryCountrySummary;
       'api::general.general': ApiGeneralGeneral;
       'api::pages-datasets.pages-datasets': ApiPagesDatasetsPagesDatasets;
       'api::pages-datasets-access-to-funding.pages-datasets-access-to-funding': ApiPagesDatasetsAccessToFundingPagesDatasetsAccessToFunding;
