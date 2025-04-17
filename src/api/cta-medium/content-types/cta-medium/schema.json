@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "cta_mediums",
+  "info": {
+    "singularName": "cta-medium",
+    "pluralName": "cta-mediums",
+    "displayName": "CTA/Medium"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "userGuide": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    }
+  }
+}

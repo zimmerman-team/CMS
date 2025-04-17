@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "frequently_asked_questions",
+  "info": {
+    "singularName": "frequently-asked-question",
+    "pluralName": "frequently-asked-questions",
+    "displayName": "FrequentlyAskedQuestion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "question": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "answer": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "group": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    }
+  }
+}
