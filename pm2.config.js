@@ -15,17 +15,7 @@ module.exports = {
       },
       autorestart: true,
       restart_delay: 100,
-      watch: true,
-      ignore_watch: [
-        ".git",
-        ".vscode",
-        "README.md",
-        "yarn.lock",
-        ".gitignore",
-        "node_modules",
-        "package.json",
-        "tsconfig.json",
-      ],
+      watch: false,
     },
   ],
 };
