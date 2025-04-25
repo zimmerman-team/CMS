@@ -6,7 +6,6 @@ module.exports = {
       args: "start",
       instances: "max",
       interpreter: "/bin/bash",
-      exec_mode: "cluster",
       max_memory_restart: "2G",
       env: {
         NODE_ENV: "development",
