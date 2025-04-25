@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: "aida-cms",
-      script: "yarn",
+      script: require.resolve("strapi/bin/strapi.js"),
       args: "start",
       instances: "max",
       interpreter: "/bin/bash",

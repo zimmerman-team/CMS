@@ -29,4 +29,4 @@ RUN chown -R node:node /opt/app
 USER node
 EXPOSE 1337
 
-CMD ["yarn", "start"]
+CMD ["pm2-runtime", "start", "pm2.config.js"]
