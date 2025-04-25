@@ -5,7 +5,7 @@ module.exports = {
       script: "yarn",
       args: "start",
       instances: "max",
-      interpreter: "/bin/bash",
+      interpreter: "/bin/sh",
       exec_mode: "cluster",
       max_memory_restart: "2G",
       env: {
