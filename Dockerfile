@@ -6,7 +6,6 @@ ENV NODE_ENV=production
 WORKDIR /opt/
 COPY package.json yarn.lock ./
 RUN yarn global add node-gyp
-RUN yarn global add pm2
 RUN yarn config set network-timeout 600000 -g && yarn install --production
 ENV PATH /opt/node_modules/.bin:$PATH
 WORKDIR /opt/app
@@ -15,8 +14,7 @@ RUN yarn build
 
 # Creating final production image
 FROM node:18-alpine
-RUN apk add --no-cache vips-dev bash
-RUN yarn global add pm2
+RUN apk add --no-cache vips-dev 
 ENV NODE_ENV=production
 WORKDIR /opt/
 COPY --from=build /opt/node_modules ./node_modules
@@ -29,4 +27,4 @@ RUN chown -R node:node /opt/app
 USER node
 EXPOSE 1337
 
-CMD ["pm2-runtime", "start", "pm2.config.js"]
+CMD ["yarn", "start"]
