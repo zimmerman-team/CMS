@@ -902,6 +902,254 @@ export interface ApiComponentsChartsEligibilityComponentsChartsEligibility
   };
 }
 
+export interface ApiComponentsFooterComponentsFooter extends Schema.SingleType {
+  collectionName: 'components_footers';
+  info: {
+    singularName: 'components-footer';
+    pluralName: 'components-footers';
+    displayName: 'Components/Footer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    copyrightText: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    connectTitle: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    contactUsText: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    careersText: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    rssFeedsText: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    reportFraudText: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    donateText: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    aboutWebsiteTitle: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    phishingAlertText: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    privacyStatementText: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    termsOfUseText: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    cookiesText: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    moreGlobalFundSitesTitle: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    globalFundWebsiteText: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    dataServiceText: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    digitalLibraryText: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    archiveText: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::components-footer.components-footer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::components-footer.components-footer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::components-footer.components-footer',
+      'oneToMany',
+      'api::components-footer.components-footer'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiComponentsHeaderComponentsHeader extends Schema.SingleType {
+  collectionName: 'components_headers';
+  info: {
+    singularName: 'components-header';
+    pluralName: 'components-headers';
+    displayName: 'Components/Header';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    datasetsLabel: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    resourceMobilizationLabel: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    resourceMobilizationDescription: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    accessToFundingLabel: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    accessToFundingDescription: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    financialInsightsLabel: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    financialInsightsDescription: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    annualResultsLabel: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    annualResultsDescription: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    geographyLabel: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    grantsLabel: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::components-header.components-header',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::components-header.components-header',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::components-header.components-header',
+      'oneToMany',
+      'api::components-header.components-header'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiComponentsSearchComponentsSearch extends Schema.SingleType {
   collectionName: 'components_searches';
   info: {
@@ -1112,6 +1360,7 @@ export interface ApiPagesDatasetsAccessToFundingPagesDatasetsAccessToFunding
     singularName: 'pages-datasets-access-to-funding';
     pluralName: 'pages-datasets-access-to-fundings';
     displayName: 'Pages/Datasets/AccessToFunding';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1212,6 +1461,24 @@ export interface ApiPagesDatasetsAccessToFundingPagesDatasetsAccessToFunding
           localized: true;
         };
       }>;
+    countriesEligible: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    cumulativeAllocationYAxisLabel: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    documentsTitle: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1243,6 +1510,7 @@ export interface ApiPagesDatasetsAnnualResultsPagesDatasetsAnnualResults
     singularName: 'pages-datasets-annual-results';
     pluralName: 'pages-datasets-annual-resultss';
     displayName: 'Pages/Datasets/AnnualResults';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1283,6 +1551,12 @@ export interface ApiPagesDatasetsAnnualResultsPagesDatasetsAnnualResults
           localized: true;
         };
       }>;
+    documentsTitle: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1314,6 +1588,7 @@ export interface ApiPagesDatasetsGrantImplementationPagesDatasetsGrantImplementa
     singularName: 'pages-datasets-grant-implementation';
     pluralName: 'pages-datasets-grant-implementations';
     displayName: 'Pages/Datasets/GrantImplementation';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1457,6 +1732,18 @@ export interface ApiPagesDatasetsGrantImplementationPagesDatasetsGrantImplementa
         };
       }>;
     expendituresTitle: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    expendituresSubtitle: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    latestUpdateText: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1653,6 +1940,59 @@ export interface ApiPagesGeographyPagesGeography extends Schema.SingleType {
       'api::pages-geography.pages-geography',
       'oneToMany',
       'api::pages-geography.pages-geography'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiPagesGrantDetailPagesGrantDetail extends Schema.SingleType {
+  collectionName: 'pages_grant_details';
+  info: {
+    singularName: 'pages-grant-detail';
+    pluralName: 'pages-grant-details';
+    displayName: 'Pages/GrantDetail';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    overviewLabel: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    financialInsightsLabel: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::pages-grant-detail.pages-grant-detail',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::pages-grant-detail.pages-grant-detail',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::pages-grant-detail.pages-grant-detail',
+      'oneToMany',
+      'api::pages-grant-detail.pages-grant-detail'
     >;
     locale: Attribute.String;
   };
@@ -2092,6 +2432,12 @@ export interface ApiPagesHomePagesHome extends Schema.SingleType {
           localized: true;
         };
       }>;
+    latestUpdateText: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -2111,6 +2457,76 @@ export interface ApiPagesHomePagesHome extends Schema.SingleType {
       'api::pages-home.pages-home',
       'oneToMany',
       'api::pages-home.pages-home'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiPagesLocationPagesLocation extends Schema.SingleType {
+  collectionName: 'pages_locations';
+  info: {
+    singularName: 'pages-location';
+    pluralName: 'pages-locations';
+    displayName: 'Pages/Location';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    overviewLabel: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    resourceMobilizationLabel: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    accessToFundingLabel: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    financialInsightsLabel: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    resultsLabel: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::pages-location.pages-location',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::pages-location.pages-location',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::pages-location.pages-location',
+      'oneToMany',
+      'api::pages-location.pages-location'
     >;
     locale: Attribute.String;
   };
@@ -2374,6 +2790,12 @@ export interface ApiPagesLocationGrantImplementationPagesLocationGrantImplementa
           localized: true;
         };
       }>;
+    latestUpdateText: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -2405,6 +2827,7 @@ export interface ApiPagesLocationOverviewPagesLocationOverview
     singularName: 'pages-location-overview';
     pluralName: 'pages-location-overviews';
     displayName: 'Pages/Location/Overview';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -2434,6 +2857,18 @@ export interface ApiPagesLocationOverviewPagesLocationOverview
         };
       }>;
     coordinatingMechanismContactsTitle: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    currentPrincipalRecipientsText: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    formerPrincipalRecipientsText: Attribute.Text &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -2470,6 +2905,7 @@ export interface ApiPagesLocationResourceMobilizationPagesLocationResourceMobili
     singularName: 'pages-location-resource-mobilization';
     pluralName: 'pages-location-resource-mobilizations';
     displayName: 'Pages/Location/ResourceMobilization';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -2511,6 +2947,12 @@ export interface ApiPagesLocationResourceMobilizationPagesLocationResourceMobili
         };
       }>;
     statsLabel2: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    title: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -2613,6 +3055,8 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::components-charts-eligibility.components-charts-eligibility': ApiComponentsChartsEligibilityComponentsChartsEligibility;
+      'api::components-footer.components-footer': ApiComponentsFooterComponentsFooter;
+      'api::components-header.components-header': ApiComponentsHeaderComponentsHeader;
       'api::components-search.components-search': ApiComponentsSearchComponentsSearch;
       'api::country-summary.country-summary': ApiCountrySummaryCountrySummary;
       'api::general.general': ApiGeneralGeneral;
@@ -2622,12 +3066,14 @@ declare module '@strapi/types' {
       'api::pages-datasets-grant-implementation.pages-datasets-grant-implementation': ApiPagesDatasetsGrantImplementationPagesDatasetsGrantImplementation;
       'api::pages-datasets-resource-mobilization.pages-datasets-resource-mobilization': ApiPagesDatasetsResourceMobilizationPagesDatasetsResourceMobilization;
       'api::pages-geography.pages-geography': ApiPagesGeographyPagesGeography;
+      'api::pages-grant-detail.pages-grant-detail': ApiPagesGrantDetailPagesGrantDetail;
       'api::pages-grant-documents.pages-grant-documents': ApiPagesGrantDocumentsPagesGrantDocuments;
       'api::pages-grant-grant-implementation.pages-grant-grant-implementation': ApiPagesGrantGrantImplementationPagesGrantGrantImplementation;
       'api::pages-grant-overview.pages-grant-overview': ApiPagesGrantOverviewPagesGrantOverview;
       'api::pages-grant-target-results.pages-grant-target-results': ApiPagesGrantTargetResultsPagesGrantTargetResults;
       'api::pages-grants.pages-grants': ApiPagesGrantsPagesGrants;
       'api::pages-home.pages-home': ApiPagesHomePagesHome;
+      'api::pages-location.pages-location': ApiPagesLocationPagesLocation;
       'api::pages-location-access-to-funding.pages-location-access-to-funding': ApiPagesLocationAccessToFundingPagesLocationAccessToFunding;
       'api::pages-location-grant-implementation.pages-location-grant-implementation': ApiPagesLocationGrantImplementationPagesLocationGrantImplementation;
       'api::pages-location-overview.pages-location-overview': ApiPagesLocationOverviewPagesLocationOverview;

@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "pages_datasets_access_to_fundings",
+  "collectionName": "components_footers",
   "info": {
-    "singularName": "pages-datasets-access-to-funding",
-    "pluralName": "pages-datasets-access-to-fundings",
-    "displayName": "Pages/Datasets/AccessToFunding",
-    "description": ""
+    "singularName": "components-footer",
+    "pluralName": "components-footers",
+    "displayName": "Components/Footer"
   },
   "options": {
     "draftAndPublish": true
@@ -16,7 +15,7 @@
     }
   },
   "attributes": {
-    "title": {
+    "copyrightText": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -24,7 +23,7 @@
       },
       "type": "string"
     },
-    "subtitle": {
+    "connectTitle": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -32,7 +31,7 @@
       },
       "type": "string"
     },
-    "statsTitle": {
+    "contactUsText": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -40,7 +39,7 @@
       },
       "type": "string"
     },
-    "statsSubtitle": {
+    "careersText": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -48,7 +47,7 @@
       },
       "type": "string"
     },
-    "eligibilityTitle": {
+    "rssFeedsText": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -56,7 +55,7 @@
       },
       "type": "string"
     },
-    "eligibilitySubtitle": {
+    "reportFraudText": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -64,7 +63,15 @@
       },
       "type": "string"
     },
-    "eligibilityDiseaseLegendTitle": {
+    "donateText": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "aboutWebsiteTitle": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -72,7 +79,7 @@
       },
       "type": "string"
     },
-    "eligibilityStatusLegendTitle": {
+    "phishingAlertText": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -80,7 +87,7 @@
       },
       "type": "string"
     },
-    "allocationTitle": {
+    "privacyStatementText": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -88,7 +95,7 @@
       },
       "type": "string"
     },
-    "allocationSubtitle": {
+    "termsOfUseText": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -96,7 +103,7 @@
       },
       "type": "string"
     },
-    "cumulativeAllocationTitle": {
+    "cookiesText": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -104,7 +111,7 @@
       },
       "type": "string"
     },
-    "cumulativeAllocationSubtitle": {
+    "moreGlobalFundSitesTitle": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -112,7 +119,7 @@
       },
       "type": "string"
     },
-    "fundingRequestsTitle": {
+    "globalFundWebsiteText": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -120,7 +127,7 @@
       },
       "type": "string"
     },
-    "fundingRequestsSubtitle": {
+    "dataServiceText": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -128,7 +135,7 @@
       },
       "type": "string"
     },
-    "statsDropDownLabel": {
+    "digitalLibraryText": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -136,23 +143,7 @@
       },
       "type": "string"
     },
-    "countriesEligible": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "cumulativeAllocationYAxisLabel": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "documentsTitle": {
+    "archiveText": {
       "pluginOptions": {
         "i18n": {
           "localized": true
