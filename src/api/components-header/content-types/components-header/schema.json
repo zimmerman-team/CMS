@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "pages_homes",
+  "collectionName": "components_headers",
   "info": {
-    "singularName": "pages-home",
-    "pluralName": "pages-homes",
-    "displayName": "Pages/Home",
-    "description": ""
+    "singularName": "components-header",
+    "pluralName": "components-headers",
+    "displayName": "Components/Header"
   },
   "options": {
     "draftAndPublish": true
@@ -16,7 +15,7 @@
     }
   },
   "attributes": {
-    "title": {
+    "datasetsLabel": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -24,7 +23,15 @@
       },
       "type": "string"
     },
-    "subtitle": {
+    "resourceMobilizationLabel": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "resourceMobilizationDescription": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -32,7 +39,7 @@
       },
       "type": "text"
     },
-    "pledgesContributionsSubtitle": {
+    "accessToFundingLabel": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -40,15 +47,7 @@
       },
       "type": "string"
     },
-    "allocationsSubtitle": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "allocationsText": {
+    "accessToFundingDescription": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -56,7 +55,7 @@
       },
       "type": "text"
     },
-    "allocationsTooltipLabel": {
+    "financialInsightsLabel": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -64,7 +63,15 @@
       },
       "type": "string"
     },
-    "grantBudgetsSubtitle": {
+    "financialInsightsDescription": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "annualResultsLabel": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -72,7 +79,15 @@
       },
       "type": "string"
     },
-    "disbursementsSubtitle": {
+    "annualResultsDescription": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "geographyLabel": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -80,31 +95,7 @@
       },
       "type": "string"
     },
-    "pledgesContributionsLabel1": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "pledgesContributionsLabel2": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "expendituresSubtitle": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "latestUpdateText": {
+    "grantsLabel": {
       "pluginOptions": {
         "i18n": {
           "localized": true

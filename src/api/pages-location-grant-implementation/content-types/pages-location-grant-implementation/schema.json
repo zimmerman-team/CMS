@@ -151,6 +151,14 @@
         }
       },
       "type": "string"
+    },
+    "latestUpdateText": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "pages-location-resource-mobilization",
     "pluralName": "pages-location-resource-mobilizations",
-    "displayName": "Pages/Location/ResourceMobilization"
+    "displayName": "Pages/Location/ResourceMobilization",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -56,6 +57,14 @@
       "type": "string"
     },
     "statsLabel2": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "title": {
       "pluginOptions": {
         "i18n": {
           "localized": true
